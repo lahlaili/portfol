@@ -28,4 +28,25 @@ header{
   z-index: 1000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 30px 18%;
+  transition: ease .40s;
+}
+.logo{
+  font-size: 35px;
+  font-weigth:600;
+  letter-spacing: 1px;
+  color: var(--text-color);
+}
+.navbar{
+  display: flex;
+}
+.navbar a{
+  color: var(--text-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 4px;
+  transition: ease .40s;
 }
