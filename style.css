@@ -29,7 +29,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+  background: rgba(0,150,150,0.6) ;
   padding: 30px 18%;
   transition: ease .40s;
 }
@@ -37,16 +37,72 @@ header{
   font-size: 35px;
   font-weigth:600;
   letter-spacing: 1px;
-  color: var(--text-color);
+  color: var(--bg-color);
 }
 .navbar{
   display: flex;
 }
 .navbar a{
-  color: var(--text-color);
+  color: var(--bg-color);
   font-size: var(--p-font);
   font-weight: 500;
   padding: 10px 22px;
   border-radius: 4px;
   transition: ease .40s;
+}
+.navbar a:hover{
+  background: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+  border-radius: 4px;
+}
+#menu-icon{
+  color: var(--bg-color);
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+section{
+  padding: 80px 18%;
+}
+.home{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(img/w5.jpg);
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: reoeat(1,1fr);
+  align-items:center;
+}
+.home-text h1{
+  font-size: var(--big-font);
+  line-height: 1.2;
+  color: var(--bg-color);
+  font-family: 'Paytone One',sans-serif;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+.home-text p{
+  color: #ffffffbf;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px;
+  margin-bottom: 50px;
+}
+.home-btn{
+  display: inline-block;
+  font-size: 10px;
+  padding: 15px 30px;
+  background: #ffffffbf;
+  color: black;
+  font-size: 15px;
+  border-radius: 4px;
+  transition: ease .40s;
+}
+.home-btn:hover{
+  background: var(--bg-color);
+  transform: scale(1.1);
 }
